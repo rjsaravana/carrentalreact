@@ -167,6 +167,7 @@ nav ul li a:hover::after {
         width: 86%;
         height: 55%;
     }
+
     .home-content-image>.blue-background {
         width: 44rem;
         height: 45%;
@@ -192,6 +193,11 @@ nav ul li a:hover::after {
     .home-content-image>.white-car {
         width: 82%;
         height: 50%;
+    }
+
+    .home-content>h1 {
+        font-size: 45px;
+        line-height: 60px;
     }
 }
 
@@ -291,11 +297,12 @@ nav ul li a:hover::after {
 }
 
 .carousel.dragging img {
-        pointer-events: none;
-    }
+    pointer-events: none;
+}
 
-.wrapper i {
-    top: 50%;
+.wrapper #left,
+#right {
+    top: 56%;
     height: 46px;
     width: 46px;
     cursor: pointer;
@@ -309,18 +316,18 @@ nav ul li a:hover::after {
     transform: translateY(-50%);
 }
 
-.wrapper i:first-child {
-    left: 20px;
+.wrapper #left:first-child {
+    left: 30px;
     z-index: 10;
 }
 
-.wrapper i:last-child {
-    right: 35px;
+.wrapper #right:last-child {
+    right: 20px;
     z-index: 10;
 }
 
 .carousel img {
-    width: calc(70%/ 3);
+    width: 265px;
     height: 209px;
     object-fit: cover;
     margin-left: 25px;
@@ -331,7 +338,31 @@ nav ul li a:hover::after {
     margin-left: 0px;
 }
 
-@media (max-width:900px) {
+.image-container {
+    position: relative;
+  }
+  
+  .img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* 50% transparent black */
+    color: white;
+    opacity: 0; /* Hide overlay by default */
+    transition: opacity 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 23px;
+  }
+  
+  .image-container:hover .img-overlay {
+    opacity: 1; /* Show overlay on hover */
+  }
+
+/* @media (max-width:900px) {
     .carousel img {
         width: calc(95%/ 2);
     }
@@ -341,7 +372,7 @@ nav ul li a:hover::after {
     .carousel img {
         width: calc(100%);
     }
-}
+} */
 
 /*------------------------------------------------------Car Catalogue-----------------------------------------------*/
 
@@ -379,7 +410,7 @@ nav ul li a:hover::after {
     border-radius: 25px;
 }
 
-.car-card-image{
+.car-card-image {
     position: relative;
     width: 227px;
     height: 120px;
@@ -440,46 +471,50 @@ nav ul li a:hover::after {
 }
 
 
-  html {
+html {
     scroll-behavior: smooth;
-  }
-  .swiper-container {
+}
+
+.swiper-container {
     width: 100%;
     overflow-x: hidden;
-  }
+}
 
-  .swiper-slide {
+.swiper-slide {
     padding: 10px;
-    width: 20%!important;
-  }
-  
-  .swiper-container ul {
+    width: 20% !important;
+}
+
+.swiper-container ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-  }
+}
 
-  @media (max-width:900px) {
+@media (max-width:900px) {
     .swiper-slide {
-        width: 37%!important;
+        width: 37% !important;
     }
 }
 
 @media (max-width:420px) {
-    .swiper-slide{
-        width: 90%!important;
-        margin-left: 40px !important; 
+    .swiper-slide {
+        width: 90% !important;
+        margin-left: 40px !important;
     }
 
-    .top-rate-btn, .all-car-btn{
+    .top-rate-btn,
+    .all-car-btn {
         margin-top: 12px;
     }
+
     /* .swiper-container {
         margin-left: 40px !important;
         margin-right: 40px !important;
         overflow-x: hidden;
       } */
 }
+
 /*------------------------------------------------------Expert Services----------------------------------------------*/
 
 .white-car2 {
