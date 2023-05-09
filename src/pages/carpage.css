@@ -182,17 +182,17 @@ nav ul li a:hover::after {
     }
 }
 
-@media (max-width:430px) {
+@media (max-width:420px) {
 
     .home-content-image>.blue-background {
-        width: 21.2rem;
+        width: 19rem;
         margin-top: 15rem;
-        height: 42%;
+        height: 34%;
     }
 
     .home-content-image>.white-car {
-        width: 82%;
-        height: 50%;
+        width: 73%;
+        height: 45%;
     }
 
     .home-content>h1 {
@@ -687,6 +687,7 @@ html {
 
 /*-----------------------------------------------------Special Offers---------------------------------------------*/
 
+
 .special-offers-content {
     display: flex;
     flex-direction: column;
@@ -737,6 +738,9 @@ html {
     .Special-blue-background {
         margin-left: 11.5rem;
     }
+    .special-offers-content>h2 {
+        margin-top: 55px;
+    }
 }
 
 @media (max-width:768px) {
@@ -752,6 +756,14 @@ html {
 
     .Special-blue-background {
         margin-left: 5.7rem !important;
+    }
+
+    .special-offers-content>h2 {
+        margin-top: 45px;
+    }
+
+    .special-off-width>p {
+        width: 17rem !important;
     }
 }
 
@@ -779,6 +791,13 @@ html {
     border-radius: 10px;
     border: none;
 }
+
+@media (max-width:420px) {
+    .special-input-box>button {
+        margin-top: 8px;
+    }
+}
+
 
 .special-offer-image {
     width: 65%;

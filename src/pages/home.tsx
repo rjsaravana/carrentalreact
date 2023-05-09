@@ -1,7 +1,7 @@
 import "./carpage.css";
 
 
-const Home = () => {
+const Home:React.FC = () => {
     return (
         <div id="home">
             <div className="row ms-5 ps-5">
@@ -12,7 +12,7 @@ const Home = () => {
                         experience.</p>
                 </div>
                 <div className="col-lg-6 col-md-12 col-12 mt-5 home-content-image">
-                    <img className="white-car" src="../assets/WhiteCar.png" alt="Img" />
+                    <img className="white-car" src="../assets/white-car.png" alt="Img" />
                     <img className="blue-background" src="../assets/Frame 1107.png" alt="blue img" />
                 </div>
             </div>
