@@ -302,7 +302,7 @@ nav ul li a:hover::after {
 
 .wrapper #left,
 #right {
-    top: 56%;
+    top: 53%;
     height: 46px;
     width: 46px;
     cursor: pointer;
