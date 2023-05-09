@@ -209,8 +209,9 @@ nav ul li a:hover::after {
     }
 
     .home-content-image>.blue-background {
-        width: 16.6rem;
+        width: 16.3rem;
         margin-top: 11rem;
+        height: 38%;
     }
 }
 
@@ -574,6 +575,10 @@ html {
         margin-top: 18px;
         margin-left: 51px;
     }
+
+    .fa-icon2 {
+        padding: 10px;
+    }
 }
 
 
@@ -738,6 +743,7 @@ html {
     .Special-blue-background {
         margin-left: 11.5rem;
     }
+
     .special-offers-content>h2 {
         margin-top: 55px;
     }
@@ -764,6 +770,18 @@ html {
 
     .special-off-width>p {
         width: 17rem !important;
+    }
+}
+
+@media (max-width:380px){
+    .Special-blue-background {
+        width: 57%;
+    }
+    .Special-blue-background {
+        margin-left: 5rem !important;
+    }
+    .special-offer-image {
+        width: 69% !important;
     }
 }
 
