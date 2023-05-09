@@ -19,7 +19,7 @@ const Findcar = () => {
     };
     return (
         <section>
-            <div className="text-center rentflow-content mt-5 ms-5 pt-5">
+            <div className="text-center rentflow-content mt-3 ms-5 pt-5">
                 <h2>Find by Car Type</h2>
                 <h5>choose your style!</h5>
             </div>
@@ -39,7 +39,7 @@ const Findcar = () => {
                         slidesPerView={4.9}
                         onSlideChange={() => console.log('slide change')}
                         onSwiper={handleSwiperInit}
-                        className='mt-5'
+                        className='mt-3'
                     >
                         <SwiperSlide>
                             <div className="image-container">
