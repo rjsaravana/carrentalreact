@@ -2,9 +2,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import "./carpage.css";
 
 const Carcatalogue = () => {
-    
     return (
-
 
         <div id="carCatalogue">
             <div className="text-center rentflow-content mt-5 ms-5 pt-5">

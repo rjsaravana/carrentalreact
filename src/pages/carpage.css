@@ -326,7 +326,19 @@ nav ul li a:hover::after {
     z-index: 10;
 }
 
-.carousel img {
+
+.image-container img:first-child {
+    margin-left: 0px;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+}
+
+.image-container img {
+    display: block;
+    height: auto;
     width: 265px;
     height: 209px;
     object-fit: cover;
@@ -334,33 +346,33 @@ nav ul li a:hover::after {
     border-radius: 24px;
 }
 
-.carousel img:first-child {
-    margin-left: 0px;
-}
-
-.image-container {
-    position: relative;
-  }
-  
-  .img-overlay {
+.overlay {
     position: absolute;
     top: 0;
+    bottom: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* 50% transparent black */
-    color: white;
-    opacity: 0; /* Hide overlay by default */
-    transition: opacity 0.5s ease;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    right: 0;
+    opacity: 0;
+    transition: 0.5s ease;
+    background-color: rgba(0, 0, 0, 0.5);
     border-radius: 23px;
-  }
-  
-  .image-container:hover .img-overlay {
-    opacity: 1; /* Show overlay on hover */
-  }
+}
+
+.image-container:hover .overlay {
+    opacity: 1;
+}
+
+.car-name {
+    color: white;
+    font-size: 23px;
+    font-weight: 600;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
 
 /* @media (max-width:900px) {
     .carousel img {

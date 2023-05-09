@@ -3,7 +3,6 @@ import "./carpage.css";
 import { Swiper, SwiperSlide, useSwiper } from 'swiper/react';
 import { faCaretLeft, faCaretRight } from "@fortawesome/free-solid-svg-icons";
 import { useRef, useState } from "react";
-// import "./findcar.js";
 import 'swiper/swiper-bundle.min.css';
 const Findcar = () => {
     const [swiperInstance, setSwiperInstance]: any = useState(null);
@@ -44,51 +43,63 @@ const Findcar = () => {
                     >
                         <SwiperSlide>
                             <div className="image-container">
+                                <img src="../assets/sedan.jpeg" alt="car image" />
+                                <div className="overlay">
+                                    <div className="car-name">Sedan</div>
+                                </div>
+                            </div>
+                            {/* <div className="image-container">
                                 <img src="../assets/sedan.jpeg" alt="car image" draggable="false" />
                                 <div className="img-overlay"></div>
                                 <p>Sedan</p>
+                            </div> */}
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div className="image-container">
+                                <img src="../assets/bugatti.jpeg" alt="car image" />
+                                <div className="overlay">
+                                    <div className="car-name">Bugatti</div>
+                                </div>
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
                             <div className="image-container">
-                                <img src="../assets/bugatti.jpeg" alt="car image" draggable="false" />
-                                <div className="img-overlay"></div>
-                                <p>Sedan</p>
+                                <img src="../assets/suv.jpeg" alt="car image" />
+                                <div className="overlay">
+                                    <div className="car-name">Suv</div>
+                                </div>
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
                             <div className="image-container">
-                                <img src="../assets/suv.jpeg" alt="car image" draggable="false" />
-                                <div className="img-overlay"></div>
-                                <p>Sedan</p>
+                                <img src="../assets/minivan.jpeg" alt="car image" />
+                                <div className="overlay">
+                                    <div className="car-name">Minivan</div>
+                                </div>
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
                             <div className="image-container">
-                                <img src="../assets/minivan.jpeg" alt="car image" draggable="false" />
-                                <div className="img-overlay"></div>
-                                <p>Sedan</p>
+                                <img src="../assets/benz.jpeg" alt="car image" />
+                                <div className="overlay">
+                                    <div className="car-name">Benz</div>
+                                </div>
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
                             <div className="image-container">
-                                <img src="../assets/benz.jpeg" alt="car image" draggable="false" />
-                                <div className="img-overlay"></div>
-                                <p>Sedan</p>
+                                <img src="../assets/bmw.jpg" alt="car image" />
+                                <div className="overlay">
+                                    <div className="car-name">Bmw</div>
+                                </div>
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
                             <div className="image-container">
-                                <img src="../assets/bmw.jpg" alt="car image" draggable="false" />
-                                <div className="img-overlay"></div>
-                                <p>Sedan</p>
-                            </div>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <div className="image-container">
-                                <img src="../assets/audi.jpg" alt="car image" draggable="false" />
-                                <div className="img-overlay"></div>
-                                <p>Sedan</p>
+                                <img src="../assets/audi.jpg" alt="car image" />
+                                <div className="overlay">
+                                    <div className="car-name">Audi</div>
+                                </div>
                             </div>
                         </SwiperSlide>
                     </Swiper>
